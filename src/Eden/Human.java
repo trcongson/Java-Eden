@@ -46,8 +46,14 @@ public class Human {
         System.out.println("Human say: " + word);
     }
 
-    public void eat() {
-
+    public void eat(Apple apple) {
+if (apple.isEmpty()){
+    apple.weight--;
+    System.out.println(this.name + " ăn 1 miếng táo");
+    System.out.println("Còn " + apple.getWeight() + "miếng táo");
+}else {
+    System.out.println(this.name + " đã hết táo");
+}
     }
 
     public void sleep() {
